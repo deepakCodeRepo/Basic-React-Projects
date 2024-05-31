@@ -1,0 +1,290 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#ab307e",
+    "activityBar.background": "#ab307e",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#25320e",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#ab307e",
+    "statusBar.background": "#832561",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#ab307e",
+    "statusBarItem.remoteBackground": "#832561",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#832561",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#83256199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#832561",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "workbench.settings.applyToAllProfiles": [],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "better-comments.multilineComments": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "cSpell.userWords": [
+    "Aishu",
+    "Bienvenidos",
+    "btns",
+    "cadetblue",
+    "cornflowerblue",
+    "darkseagreen",
+    "deepak",
+    "deeppink",
+    "Deepu",
+    "Disha",
+    "dont",
+    "Dosa",
+    "dosas",
+    "drawio",
+    "esbenp",
+    "hediet",
+    "Jayanagar",
+    "Karnataka",
+    "kolar",
+    "lightgreen",
+    "Mandalorian",
+    "Mangalore",
+    "Nadu",
+    "Naina",
+    "rgba",
+    "thisday",
+    "todohighlight",
+    "ullagaddi",
+    "vadas"
+  ],
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "workbench.colorTheme": "Andromeda",
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": [],
+  "todo-tree.highlights.enabled": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "NOTE",
+    "REVIEW",
+    "INFO",
+    "WARNING"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "icon": "bug"
+    },
+    "HACK": {
+      "icon": "tools"
+    },
+    "FIXME": {
+      "icon": "flame"
+    },
+    "XXX": {
+      "icon": "x"
+    },
+    "[ ]": {
+      "icon": "issue-draft"
+    },
+    "[x]": {
+      "icon": "issue-closed"
+    },
+    "WARNING": {
+      "icon": "alert"
+    },
+    "NOTE": {
+      "icon": "pencil"
+    },
+    "REVIEW": {
+      "icon": "question"
+    },
+    "INFO": {
+      "icon": "note"
+    }
+  },
+  "todohighlight.defaultStyle": {
+    "color": "#2196f3",
+    "backgroundColor": "#ffeb3b"
+  },
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "black",
+      "backgroundColor": "lightblue",
+      "overviewRulerColor": "rgba(255,189,42,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "REVIEW:",
+      "color": "white",
+      "backgroundColor": "violet",
+      "overviewRulerColor": "rgba(255,189,42,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "HACK:",
+      "color": "#FFF",
+      "backgroundColor": "black",
+      "overviewRulerColor": "rgba(255,189,42,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "TODO:",
+      "color": "black",
+      "backgroundColor": "#ffbd2a",
+      "overviewRulerColor": "rgba(255,189,42,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": false
+    },
+    {
+      "text": "BUG:",
+      "color": "#000",
+      "backgroundColor": "RED",
+      "overviewRulerColor": "rgba(255,189,42,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "FIXME:",
+      "color": "#fff",
+      "backgroundColor": "#f06292",
+      "overviewRulerColor": "rgba(240,98,146,0.8)",
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "INFO:", // without a defined regex pattern this is the string that will be matched
+      "color": "WHITE",
+      "backgroundColor": "GREEN", // INFO: setting the last parameter to zero (alpha channel) disables the background color
+      "borderRadius": "3px",
+      "isWholeLine": true
+    },
+    {
+      "text": "WARNING:",
+      "before": {
+        "contentText": "⚠️" // adds text before the highlight
+      },
+      "after": {
+        "contentText": "⚠️" // adds text after the highlight
+      },
+      "color": "red",
+      "border": "1px solid red",
+      "borderRadius": "2px", // NOTE: use borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "rgba(0,0,0,.2)",
+      "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+    }
+  ],
+  "cSpell.words": [
+    "Bookcover",
+    "Booklist",
+    "Booktitle",
+    "Ganesh",
+    "immer",
+    "Jobster",
+    "listof",
+    "Redmi",
+    "reduxjs",
+    "webfonts",
+    "Withoutuse",
+    "Withuse"
+  ]
+}
