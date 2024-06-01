@@ -1,3 +1,17 @@
+npm create vite@latest name -- --template  
+npm install
+
+npm i prop-types
+import PropTypes from "prop-types";
+Tours.propTypes = {
+info: PropTypes.array.isRequired,
+};
+
+npm i axios
+import axios from "axios";
+
+npm run dev
+
 ## Corresponding Tutorial Topics
 
 #### useState
@@ -35,5 +49,3 @@
 #### React Router and useCallback
 
 15. Cocktails
-
-
