@@ -2,7 +2,7 @@ import Tour from "./Tour";
 import PropTypes from "prop-types";
 
 const Tours = ({ info }) => {
-  console.log(info);
+  // console.log(info);
 
   return (
     <section className="all-tours">
