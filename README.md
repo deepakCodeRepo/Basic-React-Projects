@@ -10,6 +10,10 @@ info: PropTypes.array.isRequired,
 npm i axios
 import axios from "axios";
 
+npm install react-query
+
+npm i react-icons --save
+
 npm run dev
 
 ## Corresponding Tutorial Topics

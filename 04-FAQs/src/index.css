@@ -14,6 +14,15 @@ Variables
   --primary-700: #3c3799;
   --primary-800: #282566;
   --primary-900: #141233;
+  --primary-1: #cffafe;
+  --primary-2: #a5f3fc;
+  --primary-3: #67e8f9;
+  --primary-4: #22d3ee;
+  --primary-5: #06b6d4;
+  --primary-6: #0891b2;
+  --primary-7: #0e7490;
+  --primary-8: #155e75;
+  --primary-9: #164e63;
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
   --grey-200: #e2e8f0;
@@ -84,4 +93,68 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-1);
+}
+main {
+  width: 90vw;
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--grey-700);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.question-answer {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--grey-200);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1rem; */
+}
+h5 {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--grey-700);
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+p {
+  color: var(--grey-500);
+  line-height: 2;
+  margin-top: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+}
+.question-btn {
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--primary-9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  align-self: flex-start;
+  min-width: 2rem;
 }
