@@ -7,7 +7,7 @@ const Question = ({ title, info }) => {
   return (
     <article className="question-answer">
       <div className="question">
-        <h5>{title}</h5>
+        <h5 onClick={() => setToggle(!toggle)}>{title}</h5>
         <button className="question-btn" onClick={() => setToggle(!toggle)}>
           {toggle ? <AiOutlinePlus /> : <AiOutlineMinus />}
         </button>
