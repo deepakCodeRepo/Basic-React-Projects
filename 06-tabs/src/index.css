@@ -1,0 +1,194 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --light-green-100: #ccfbf1;
+  --light-green-200: #99f6e4;
+  --light-green-300: #5eead4;
+  --light-green-400: #2dd4bf;
+  --light-green-500: #14b8a6;
+  --light-green-600: #0d9488;
+  --light-green-700: #0f766e;
+  --light-green-800: #115e59;
+  --light-green-900: #134e4a;
+  --orange-01: #fef3c7;
+  --orange-02: #fde68a;
+  --orange-03: #fcd34d;
+  --orange-04: #fbbf24;
+  --orange-05: #f59e0b;
+  --orange-06: #d97706;
+  --orange-07: #b45309;
+  --orange-08: #92400e;
+  --orange-09: #78350f;
+  --violet-100: #e2e0ff;
+  --violet-200: #c1beff;
+  --violet-300: #a29dff;
+  --violet-400: #837dff;
+  --violet-500: #645cff;
+  --violet-600: #504acc;
+  --violet-700: #3c3799;
+  --violet-800: #282566;
+  --violet-900: #141233;
+  --blue-1: #cffafe;
+  --blue-2: #a5f3fc;
+  --blue-3: #67e8f9;
+  --blue-4: #22d3ee;
+  --blue-5: #06b6d4;
+  --blue-6: #0891b2;
+  --blue-7: #0e7490;
+  --blue-8: #155e75;
+  --blue-9: #164e63;
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(184, 91%, 17%);
+  --clr-primary-2: hsl(185, 84%, 25%);
+  --clr-primary-3: hsl(185, 81%, 29%);
+  --clr-primary-4: hsl(184, 77%, 34%);
+  --clr-primary-5: #2caeba;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(185, 57%, 50%);
+  --clr-primary-7: hsl(184, 65%, 59%);
+  --clr-primary-8: hsl(184, 80%, 74%);
+  --clr-primary-9: hsl(185, 94%, 87%);
+  --clr-primary-10: hsl(186, 100%, 94%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  width: 1120px;
+  height: fit-content;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 4rem;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+.tab {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background: transparent;
+  border-color: transparent;
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 1rem;
+  color: black;
+}
+.tab-active {
+  color: var(--light-green-500);
+  border-left: 2px solid var(--light-green-500);
+  /* border-width: 0.3rem; */
+}
+.tab:hover {
+  color: var(--light-green-500);
+}
+.title {
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  font-size: 2rem;
+}
+.company {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--grey-700);
+  background: var(--grey-300);
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius);
+  margin: 0.75rem 0;
+}
+.dates {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--grey-500);
+  letter-spacing: var(--spacing);
+  margin-bottom: 2rem;
+}
+.duties {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.duty {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: var(--grey-700);
+  line-height: 1.5;
+}
+svg {
+  color: var(--light-green-500);
+}
+.loading {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 5rem;
+}
