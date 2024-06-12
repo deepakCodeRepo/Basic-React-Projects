@@ -22,6 +22,7 @@ function App() {
       },
     }
   );
+  console.log(data);
 
   const selectTab = (tab_info) => {
     const selectedTab = tabs.filter((tab) => tab.company === tab_info);
