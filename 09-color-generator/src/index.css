@@ -86,6 +86,9 @@ input[type="text"] {
   border-top-left-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
 }
+input[type="text"].error {
+  border: 2px solid var(--clr-red-dark);
+}
 button {
   cursor: pointer;
   color: var(--clr-white);
