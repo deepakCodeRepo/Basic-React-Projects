@@ -79,15 +79,19 @@ input[type="color"] {
   background-color: var(--clr-white);
   border-color: var(--clr-white);
 }
-input[type="text"] {
+.text-input {
   border-color: transparent;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-top-left-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
 }
-input[type="text"].error {
+.error {
   border: 2px solid var(--clr-red-dark);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 button {
   cursor: pointer;
@@ -122,9 +126,23 @@ button:hover {
   cursor: pointer;
   font-size: 1rem;
 }
+.pv {
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
 .color-value {
   line-height: 1.5;
   margin-bottom: 0.25rem;
   cursor: pointer;
   font-size: 1rem;
+}
+.cv {
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
 }
