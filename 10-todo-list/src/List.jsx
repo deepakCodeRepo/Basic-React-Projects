@@ -1,7 +1,23 @@
-import React from 'react'
-import { FaEdit, FaTrash } from 'react-icons/fa'
-const List = () => {
-  return <h2>list component</h2>
-}
+import { FaEdit, FaTrash } from "react-icons/fa";
+import PropTypes from "prop-types";
 
-export default List
+const List = ({ item }) => {
+  return (
+    <div className="single-item">
+      <input type="checkbox" />
+      <p>{item}</p>
+      <button className="edit-btn">
+        <FaEdit />
+      </button>
+      <button className="delete-btn">
+        <FaTrash />
+      </button>
+    </div>
+  );
+};
+
+List.propTypes = {
+  item: PropTypes.string.isRequired,
+};
+
+export default List;
