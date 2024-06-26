@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { links, social } from "./data";
 import logo from "./assets/react.svg";
@@ -9,16 +9,15 @@ const Navbar = () => {
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
-  useEffect(() => {
+  const toggle = () => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
-    console.log(linksRef.current.getBoundingClientRect());
-    console.log(linksHeight);
     if (toggleLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
-  }, [toggleLinks]);
+    setToggleLinks(!toggleLinks);
+  };
 
   return (
     <main>
@@ -26,10 +25,7 @@ const Navbar = () => {
         <div className="header-container">
           <div className="nav-header">
             <img src={logo} alt="logo" />
-            <button
-              className="nav-toggle"
-              onClick={() => setToggleLinks(!toggleLinks)}
-            >
+            <button className="nav-toggle" onClick={toggle}>
               <FaBars />
             </button>
           </div>
