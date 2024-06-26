@@ -2,8 +2,17 @@ import { useState, useEffect } from "react";
 import List from "./List";
 import Alert from "./Alert";
 
+const setLocalStorage = (items) => {
+  localStorage.setItem("listOfItems", JSON.stringify(items));
+};
+
+const getLocalStorage = () => {
+  let list = localStorage.getItem("listOfItems");
+  return list ? JSON.parse(list) : [];
+};
+
 function App() {
-  const [itemList, setItemList] = useState([]);
+  const [itemList, setItemList] = useState(getLocalStorage());
   const [itemValue, setItemValue] = useState("");
   const [isChecked, setIsChecked] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -27,11 +36,13 @@ function App() {
       return;
     } else if (isEditing) {
       itemList[index] = itemValue;
+      setLocalStorage(itemList);
       setIsEditing(false);
       setItemValue("");
       setEditAlert(true);
     } else {
       itemList.push(itemValue);
+      setLocalStorage(itemList);
       // setItemList(itemList);
       setItemValue("");
       setAddAlert(true);
@@ -52,6 +63,7 @@ function App() {
   const deleteItem = (itemIndex) => {
     let updatedItemList = itemList.filter((item, index) => index !== itemIndex);
     setItemList(updatedItemList);
+    setLocalStorage(updatedItemList);
     setDeleteAlert(true);
     setIsEditing(false);
     setItemValue("");
