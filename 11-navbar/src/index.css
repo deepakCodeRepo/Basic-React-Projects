@@ -92,9 +92,9 @@ img {
   font-size: 2rem;
   cursor: pointer;
 }
-.links-container {
+/* .links-container {
   height: auto !important;
-}
+} */
 .links {
   display: flex;
   gap: 0.2rem;
@@ -118,8 +118,10 @@ a {
   text-decoration: none;
 }
 .social-icons {
+  width: 10rem;
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-evenly;
+  gap: 0.8rem;
 }
 .social-icons a {
   color: var(--blue-500);
@@ -134,10 +136,24 @@ a {
     display: flex;
     justify-content: space-between;
   }
+  /* INFO: css for code i wrote */
   .links-container {
+    display: block;
+  }
+  /* INFO: css for smooth transition */
+  /* .links-container {
+    height: 0 ;
     overflow: hidden;
     transition: var(--transition);
   }
+  .show-links {
+    height: 15rem;
+    } */
+  /* INFO: css for auto-adjusting container */
+  /* .links-container {
+    overflow: hidden;
+    transition: var(--transition);
+  } */
   .links {
     width: 100vw;
     display: flex;
