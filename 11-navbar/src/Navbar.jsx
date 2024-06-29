@@ -1,20 +1,20 @@
-import { useState } from "react";
-// import { useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+// import { useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { links, social } from "./data";
 import logo from "./assets/react.svg";
 
 //INFO: code I came up with
 const Navbar = () => {
-  const [toggleLinks, setToggleLinks] = useState(true);
+  const [toggleLinks, setToggleLinks] = useState(false);
 
-  window.onresize = function () {
+  useEffect(() => {
     if (window.innerWidth > 800) {
       setToggleLinks(true);
     } else if (window.innerWidth <= 800) {
       setToggleLinks(false);
     }
-  };
+  }, []);
 
   return (
     <main>
@@ -114,28 +114,27 @@ export default Navbar; */
 
 //INFO: auto-adjusting container for the height of the links using useRef hook
 /* const Navbar = () => {
-  const [toggleLinks, setToggleLinks] = useState(false);
-
+  const [toggleLinks, setToggleLinks] = useState(true);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
-  window.onresize = function () {
+  useEffect(() => {
     if (window.innerWidth > 800) {
       linksContainerRef.current.style.height = "auto";
-      setToggleLinks(false);
     } else if (window.innerWidth <= 800) {
       linksContainerRef.current.style.height = "0px";
     }
-  };
+  }, []);
 
-  useEffect(() => {
+  const linksToggle = () => {
+    setToggleLinks(!toggleLinks);
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (toggleLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
-  }, [toggleLinks]);
+  };
 
   return (
     <main>
@@ -143,10 +142,7 @@ export default Navbar; */
         <div className="header-container">
           <div className="nav-header">
             <img src={logo} alt="logo" />
-            <button
-              className="nav-toggle"
-              onClick={() => setToggleLinks(!toggleLinks)}
-            >
+            <button className="nav-toggle" onClick={linksToggle}>
               <FaBars />
             </button>
           </div>

@@ -136,10 +136,6 @@ a {
     display: flex;
     justify-content: space-between;
   }
-  /* INFO: css for code i wrote */
-  .links-container {
-    display: block;
-  }
   /* INFO: css for smooth transition */
   /* .links-container {
     height: 0 ;
@@ -150,10 +146,10 @@ a {
     height: 15rem;
     } */
   /* INFO: css for auto-adjusting container */
-  /* .links-container {
+  .links-container {
     overflow: hidden;
     transition: var(--transition);
-  } */
+  }
   .links {
     width: 100vw;
     display: flex;
