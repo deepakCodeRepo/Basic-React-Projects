@@ -2,11 +2,18 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 import Submenu from "./Submenu";
+import AppProvider from "./context";
+
 function App() {
   return (
-    <>
-      <h2>stripe submenus setup</h2>
-    </>
+    <AppProvider>
+      <main>
+        <Navbar />
+        <Hero />
+        <Sidebar />
+        <Submenu />
+      </main>
+    </AppProvider>
   );
 }
 
