@@ -32,6 +32,6 @@ export default AppProvider;
 export const useAppContext = (): AppContextType => {
   const context = useContext(AppContext);
   if (context === undefined)
-    throw new Error("useTheme must be used within the ThemeProvider");
+    throw new Error("useAppContext must be used within the AppProvider");
   return context;
 };

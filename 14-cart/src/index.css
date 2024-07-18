@@ -69,6 +69,17 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+.loading {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.error {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: red;
+}
 /*
 =============== 
 Header
@@ -226,6 +237,7 @@ h3 {
 .btn-clear-cart {
   margin: 0 auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   cursor: pointer;
   color: var(--white);
   background: var(--primary-500);

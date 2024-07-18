@@ -1,6 +1,7 @@
 import { useReducer } from "react";
-import type { Item } from "./context";
-import data from "./data";
+import { type Item } from "./context";
+// import localData from "./localData";
+import useCustomQuery from "./queryData";
 
 export type CartActionType = {
   type: "increment" | "decrement" | "clear" | "remove";
@@ -35,6 +36,8 @@ const reducerFunction = (state: Item[], action: CartActionType): Item[] => {
 };
 
 const useCartReducer = () => {
+  const { data } = useCustomQuery();
+
   return useReducer(reducerFunction, data);
 };
 
