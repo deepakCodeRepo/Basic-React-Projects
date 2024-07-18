@@ -128,10 +128,18 @@ h1 {
   line-height: 1;
   letter-spacing: var(--letterSpacing);
 }
+.empty-cart {
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-transform: lowercase;
+  color: var(--grey-500);
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
 main {
   width: var(--view-width);
   margin: 20px auto 0;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   max-width: var(--fixed-width);
 }
 /*
@@ -180,6 +188,9 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.amount {
+  font-size: 1.2rem;
+}
 /*
 =============== 
 Footer
@@ -210,6 +221,7 @@ h3 {
   border-radius: var(--borderRadius);
   color: var(--white);
   font-size: 1.1rem;
+  letter-spacing: var(--letterSpacing);
 }
 .btn-clear-cart {
   margin: 0 auto;
